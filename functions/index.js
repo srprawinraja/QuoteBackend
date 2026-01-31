@@ -139,7 +139,9 @@ app.get("/tags", limiter, checkApiKey, async (req, res) => {
 // POST /tag
 app.post("/tag", limiter, checkApiKey, async (req, res) => {
   try {
+    
     const { tag, slug, img } = req.body;
+
     if (!tag || !slug || !img) return res.status(400).json({ error: "Missing params" });
 
     const docRef = await db.collection("tags").add({ tag, slug, img });
@@ -154,6 +156,7 @@ app.get("/health", (req, res) => {
 });
 
 
-// Start server
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
+});
