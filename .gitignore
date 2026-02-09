@@ -67,3 +67,11 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+/quoteit/
+
+firebaseconfig.env
+tag-script.py
+secret.env
+quote-script.py
+
