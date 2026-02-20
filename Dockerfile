@@ -18,4 +18,4 @@ ENV PORT=4000
 EXPOSE $PORT
 
 # Run the app
-CMD ["npm", "start"]
+CMD ["node", "functions/index.js"]
