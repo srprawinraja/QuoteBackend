@@ -1,6 +1,7 @@
 {
   "name": "quoteit-backend",
   "version": "1.0.0",
+  "type": "module",
   "main": "functions/index.js",
   "dependencies": {
     "dotenv": "^17.2.3",
@@ -10,10 +11,10 @@
     "firebase-admin": "^13.6.1"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.50.1"
+    "@typescript-eslint/parser": "^8.56.0"
   },
   "scripts": {
     "start": "node functions/index.js",
-    "dev": "nodemon functions/index.js"
+    "dev": "node functions/index.js"
   }
 }
