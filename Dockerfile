@@ -7,6 +7,7 @@ COPY package*.json ./
 # Install application dependencies
 RUN npm install
 # Copy the rest of the application code
+EXPOSE 4000
 COPY . .
 # Specify the command to run your application
 CMD ["npm", "run", "dev"]
