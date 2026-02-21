@@ -11,7 +11,7 @@
     "firebase-admin": "^13.6.1"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.56.0"
+    "@typescript-eslint/parser": "^6.15.0"
   },
   "scripts": {
     "start": "node functions/index.js",
